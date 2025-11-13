@@ -1,0 +1,354 @@
+@import "../../node_modules/system-font-css/system-font";
+@import "../../node_modules/animate.css/animate";
+
+// =============================================================================
+// STENCIL
+// =============================================================================
+
+
+// Tools
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's toolkit for use.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/tools/toolkit"; // 1
+@import "tools/tools";
+
+// Settings
+// -----------------------------------------------------------------------------
+//
+// 1. Stencil global settings get imported first.
+// 2. Import all Citadel and Foundation settings.
+// 3. Import Citadel's version of foundation.
+//      - This enables the ability to "null" variables in the Stencil settings.
+// 4. Import Stencil's component settings overrides.
+// 5. Import tools which set/reset Citadel's global settings, to be consumed by
+//    the rest of Stencil.
+//
+// -----------------------------------------------------------------------------
+
+@import "settings/global/global"; // 1
+
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/global/global"; // 2
+
+@import "settings/global/tools"; // 5
+
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/normalize/normalize"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/foundation/foundation"; // 2
+@import "../../node_modules/@bigcommerce/citadel/dist/settings/bigcommerce/bigcommerce"; // 2
+
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/foundation/foundation"; // 3
+
+@import "settings/normalize/normalize"; // 4
+@import "settings/vendor/vendor"; // 4
+@import "settings/foundation/foundation"; // 4
+@import "settings/citadel/citadel"; // 4
+@import "settings/stencil/stencil"; // 4
+@import "settings/layouts/layouts"; // 4
+
+
+// Utilities
+// -----------------------------------------------------------------------------
+
+@import "utilities/utilities";
+@import "../../node_modules/@bigcommerce/citadel/dist/utilities/utilities";
+
+
+// Components
+// -----------------------------------------------------------------------------
+//
+// 1. Import Citadel's normalize dependency.
+// 2. Import Citadel's components.
+// 2. Import Stencil's component additions and custom components.
+//
+// -----------------------------------------------------------------------------
+
+@import "../../node_modules/@bigcommerce/citadel/dist/vendor/normalize/normalize"; // 1
+@import "../../node_modules/@bigcommerce/citadel/dist/components/components"; // 2
+@import "components/components"; // 3
+
+
+// Layouts
+// -----------------------------------------------------------------------------
+//
+// 1. Stencil design layout files (example: Header or Footer).
+//
+// -----------------------------------------------------------------------------
+
+@import "layouts/layouts"; // 1
+
+@import "vendor/jstree/style";
+
+// Flair Theme import
+// -----------------------------------------------------------------------------
+
+@import "f/f";
+
+/* ========================================
+   START ANGELFIRE PROSTAFF PROFILE PAGE STYLES
+   ======================================== */
+
+/* ========================================
+   PAGE HEADER & LOGO
+   ======================================== */
+
+/* Container for the ProStaff logo at top of page */
+.prostaff-page-header {
+  text-align: center;
+  margin: 30px auto;
+}
+
+/* Logo image sizing - responsive */
+.prostaff-logo {
+  max-width: 300px;
+  height: auto;
+}
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+
+/* Introduction paragraph container */
+.prostaff-intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px; /* Padding for mobile devices */
+}
+
+/* Horizontal divider lines above and below intro text */
+.prostaff-divider {
+  width: 75%;
+  max-width: 600px;
+  margin: 30px auto;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+/* ========================================
+   MAIN CONTAINER
+   ======================================== */
+
+/* Main container holding all shooter profiles */
+.prostaff-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========================================
+   INDIVIDUAL SHOOTER PROFILE
+   ======================================== */
+
+/* Each shooter's complete profile section */
+.shooter-profile {
+  margin-bottom: 60px; /* Space between each profile */
+}
+
+/* Top section containing photo and info side-by-side */
+.profile-top {
+  display: flex;
+  align-items: flex-start; /* Align items to top */
+  gap: 20px; /* Space between photo and info */
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   SHOOTER PHOTO
+   ======================================== */
+
+/* Photo container - fixed width to maintain layout */
+.shooter-photo {
+  flex: 0 0 300px; /* Don't grow or shrink, stay 300px */
+}
+
+/* Photo image itself */
+.shooter-photo img {
+  width: 300px;
+  height: 375px;
+  object-fit: cover; /* Crop to fit dimensions */
+  display: block;
+}
+
+/* ========================================
+   SHOOTER INFO SECTION
+   ======================================== */
+
+/* Right column containing name, stats, and social links */
+.shooter-info {
+  flex: 1; /* Take up remaining space */
+  min-height: 375px; /* Match photo height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push social links to bottom */
+}
+
+/* Shooter name heading */
+.shooter-info h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Container for all shooter stats */
+.shooter-stats {
+  margin-bottom: 20px;
+}
+
+/* Individual stat lines (Hometown, Favorite Gun, etc.) */
+.shooter-stats p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+/* Bold labels for stats */
+.shooter-stats strong {
+  font-weight: 600;
+}
+
+/* ========================================
+   SOCIAL MEDIA SECTION
+   ======================================== */
+
+/* Social links container - pushed to bottom of shooter-info */
+.profile-social {
+  margin-top: auto; /* Push to bottom */
+}
+
+/* "Connect with [Name]" heading */
+.profile-social h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Container for social media icon links */
+.social-links {
+  display: flex;
+  gap: 8px; /* Space between icons */
+  align-items: center;
+}
+
+/* Individual social media link */
+.social-links a {
+  display: inline-block;
+  transition: opacity 0.2s; /* Smooth hover effect */
+}
+
+/* Hover effect for social links */
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+/* Social media icon images */
+.social-links img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* ========================================
+   VIDEO HIGHLIGHTS SECTION
+   ======================================== */
+
+/* Video section container */
+.profile-videos {
+  margin-top: 30px;
+}
+
+/* "Featured Highlights" heading */
+.profile-videos h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Grid container for video thumbnails */
+.video-grid {
+  display: flex;
+  justify-content: center; /* Center the videos */
+  gap: 15px; /* Space between thumbnails */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Individual video thumbnail link */
+.video-grid a {
+  display: block;
+  flex: 0 1 230px; /* Don't grow, can shrink, preferred 230px */
+  max-width: 230px;
+  transition: transform 0.2s; /* Smooth hover animation */
+}
+
+/* Hover effect - lift video thumbnail slightly */
+.video-grid a:hover {
+  transform: translateY(-3px);
+}
+
+/* Video thumbnail images */
+.video-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - TABLETS & MOBILE
+   ======================================== */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  /* Stack photo and info vertically */
+  .profile-top {
+    flex-direction: column;
+  }
+  
+  /* Center photo and make responsive */
+  .shooter-photo {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto; /* Center the photo */
+  }
+  
+  /* Make photo responsive to container */
+  .shooter-photo img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Remove fixed height since layout is now vertical */
+  .shooter-info {
+    min-height: auto;
+  }
+  
+  /* Make videos full width on mobile */
+  .video-grid a {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+  /* Reduce heading size for small screens */
+  .shooter-info h2 {
+    font-size: 24px;
+  }
+  
+  /* Tighten video spacing */
+  .video-grid {
+    gap: 10px;
+  }
+}
+
+/* ========================================
+   END ANGELFIRE PROSTAFF PROFILE PAGE STYLES
+   ======================================== */
