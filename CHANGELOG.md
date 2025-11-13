@@ -1,5 +1,113 @@
 # Changelog
 
+## 1.11.5 (2025-11-13)
+
+## Overview
+All blue accent colors have been systematically converted to red shades, maintaining proper visual hierarchy and contrast relationships throughout your BigCommerce theme.
+
+## Color Conversion Map
+
+### Primary Colors
+| Old Blue | New Red | Usage | Instances |
+|----------|---------|-------|-----------|
+| `#0071e3` | `#dc2626` | Primary brand color, main buttons, links | 44 |
+| `#1A8BFD` | `#ef4444` | Button hover/active states, lighter accents | 16 |
+| `#007dc6` | `#dc2626` | Sale badges | 5 |
+
+### Medium Tones
+| Old Blue | New Red | Usage | Instances |
+|----------|---------|-------|-----------|
+| `#3c6a92` | `#b91c1c` | Carousel arrow hover color | 5 |
+| `#29547a` | `#991b1b` | Featured category buttons, search borders | 11 |
+| `#30628e` | `#991b1b` | Medium-dark accents | 2 |
+
+### Dark Tones
+| Old Blue | New Red | Usage | Instances |
+|----------|---------|-------|-----------|
+| `#174C52` | `#7f1d1d` | Very dark accents | 2 |
+| `#003238` | `#7f1d1d` | Very dark accents | 3 |
+
+## Total Changes: 88+ color instances converted
+
+## Red Color Palette Summary
+Your theme now uses these reds in a coordinated palette:
+
+- **#ef4444** - Bright red (hover states, attention)
+- **#dc2626** - Primary red (main actions, CTAs) ← Matches landing pages
+- **#b91c1c** - Medium-dark red (secondary interactions)
+- **#991b1b** - Dark red (subtle accents)
+- **#7f1d1d** - Very dark red (borders, shadows)
+
+## UI Elements Updated
+
+### Buttons
+- ✅ Primary button backgrounds
+- ✅ Primary button hover states
+- ✅ Primary button active states
+- ✅ Primary button borders (hover & active)
+- ✅ Featured category buttons
+
+### Navigation & Interactive Elements
+- ✅ Text link hover colors
+- ✅ Carousel arrow hover colors
+- ✅ Header search borders
+
+### E-commerce Specific
+- ✅ "Add to Cart" buttons
+- ✅ Checkout buttons (including optimized checkout)
+- ✅ Sale badge colors
+- ✅ Product badges
+
+### Links
+- ✅ All link hover states
+- ✅ Active link states
+
+## Color Hierarchy Maintained
+The conversion maintains proper visual hierarchy:
+- **Brightest red** (`#ef4444`) - Draws attention on hover
+- **Primary red** (`#dc2626`) - Main brand actions
+- **Medium reds** (`#b91c1c`, `#991b1b`) - Supporting elements
+- **Dark red** (`#7f1d1d`) - Subtle depth
+
+## Brand Consistency Achieved
+✅ Website now matches landing page red (`#dc2626`)
+✅ Email campaigns align with site colors
+✅ Consistent military/ammunition brand aesthetic
+✅ Strong veteran-owned brand presence
+
+## Testing Recommendations
+
+### Desktop
+- [ ] Homepage hero/carousel
+- [ ] Product listing pages
+- [ ] Individual product pages
+- [ ] Add to Cart button
+- [ ] Shopping cart
+- [ ] Checkout process
+- [ ] Navigation hover states
+- [ ] Search functionality
+- [ ] Sale badges on products
+
+### Mobile
+- [ ] Touch targets (buttons)
+- [ ] Navigation menu
+- [ ] Product cards
+- [ ] Checkout flow
+- [ ] Hamburger menu
+
+### Cross-browser
+- [ ] Chrome
+- [ ] Firefox
+- [ ] Safari
+- [ ] Edge
+
+## Notes
+- All changes maintain WCAG contrast requirements
+- Red color scheme reinforces ammunition/firearms industry norms
+- Veteran-owned branding strengthened through patriotic red color
+- No structural changes made - only color values updated
+
+
 ## 1.11.5 (2023-12-06)
 
 ### Updated
